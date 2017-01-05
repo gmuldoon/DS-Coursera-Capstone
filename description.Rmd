@@ -1,0 +1,18 @@
+---
+title: "About"
+author: "Gail Muldoon"
+date: "1/4/2017"
+output: html_document
+---
+
+
+## Coursera Data Science Capstone
+### Text prediction
+
+This Shiny app predicts the next word in a provided phrase. 
+
+It is trained on data taken from twitter, blogs, and online news. The data has been downloaded from https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip. The data is cleaned and divided into datasets of bigrams (2-word phrases), trigrams (3-word phrases), and quadgrams (4-word phrases). Entered phrases are compared against first the quadgrams, then trigrams (if no quadgrams are found), then bigrams (if no trigrams are found) to estimate the following word based on a large database of contextual phrases. 
+
+### Quick Use Guide
+
+To use the app, enter an English language phrase in the text box on the Home page. The next word will be predicted on the right-hand side.
